@@ -1,5 +1,5 @@
 {
   "jwtPrivateKey": "jwtPrivateKey",
-  "db": "mongodb://localhost:27017",
+  "db": "mongodb://localhost:27017/watchIt",
   "port": "3900"
 }
