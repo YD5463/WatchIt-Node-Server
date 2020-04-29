@@ -1,4 +1,4 @@
-## Fluffy-lamp
+## Watch-It
 
 ### Install the Dependencies
 
