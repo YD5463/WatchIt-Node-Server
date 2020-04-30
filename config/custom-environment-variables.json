@@ -1,3 +1,5 @@
 {
-  "jwtPrivateKey": "watchIt_jwtPrivateKey"
+  "jwtPrivateKey": "watchIt_jwtPrivateKey",
+  "appEmailAddress": "watchIt_emailAddress",
+  "appEmailPassword": "watchIt_emailPassword"
 }

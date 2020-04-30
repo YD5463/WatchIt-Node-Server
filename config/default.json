@@ -1,5 +1,7 @@
 {
   "jwtPrivateKey": "jwtPrivateKey",
+  "appEmailAddress": "appEmailAddress",
+  "appEmailPassword": "appEmailPassword",
   "db": "mongodb://localhost:27017/watchIt",
   "port": "3900"
 }
