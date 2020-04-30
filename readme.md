@@ -2,18 +2,25 @@
 
 ### Install the Dependencies
 
-    npm i
+```shell
+npm i
+```
 
 ### Start the Server
 
-    node index.js
+```shell
+node index.js
+```
 
 This will launch the Node server on port 3900
 
 ### Environment Variables
 
-    export vidly_jwtPrivateKey=yourSecureKey
+if your mac users use export instead set
 
-On Windows:
+```bash
+set watchIt_jwtPrivateKey=yourSecureKey
+set watchIt_emailAddress=appEmailAdress
+set watchIt_emailPassword=passwordForEmail
+```
 
-    set vidly_jwtPrivateKey=yourSecureKey

@@ -44,6 +44,9 @@ userSchema.methods.sendEmail = function (token) {
     subject: "Reset your password",
     html: `<a href="http://localhost:3000/login/${token}">click here</a> `,
   };
+  console.log(transporter);
+  console.log(mailOptions);
+
   transporter.sendMail(mailOptions, function (error, info) {
     winston.info(error || info.response);
   });
