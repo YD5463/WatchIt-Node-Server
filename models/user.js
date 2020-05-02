@@ -4,6 +4,7 @@ const Joi = require("joi");
 const mongoose = require("mongoose");
 const nodemailer = require("nodemailer");
 const winston = require("winston");
+const ejs = require("ejs");
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -29,7 +30,7 @@ const userSchema = new mongoose.Schema({
   isAdmin: Boolean,
 });
 
-userSchema.methods.sendEmail = function (token) {
+userSchema.methods.sendEmail = async function (token) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -37,12 +38,12 @@ userSchema.methods.sendEmail = function (token) {
       pass: config.get("appEmailPassword"),
     },
   });
-
   const mailOptions = {
     from: "WatchIt@gmail.com",
     to: this.email,
     subject: "Reset your password",
-    html: `<a href="http://localhost:3000/login/${token}">click here</a> `,
+    html: `<h1>Hey ${this.name}</h1><a class='btn btn-primary' href'=http://localhost:3000/login/${token}'>Click Here</a>
+    <p>to reset your password</p>`,
   };
   console.log(transporter);
   console.log(mailOptions);
