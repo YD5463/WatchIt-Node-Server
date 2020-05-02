@@ -24,7 +24,7 @@
     "jsonwebtoken": "^8.1.1",
     "lodash": "^4.17.10",
     "moment": "^2.20.1",
-    "mongoose": "^5.0.2",
+    "mongoose": "^5.7.5",
     "nodemailer": "^6.4.6",
     "typescript": "^3.8.3",
     "winston": "^2.4.0",
